@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { FormGroup, FormControl } from '@angular/forms';
+import { SharedDataService } from '../shared/shared-data.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   //here if i didnt include the Router class inside contructor
   //then this router object ould not be initialized and throw error.
-  constructor(private router: Router) { }
+  constructor(private router: Router, private shared: SharedDataService) { }
 
   ngOnInit(): void {
   }
@@ -35,7 +36,11 @@ export class LoginComponent implements OnInit {
   //first I'am fetching username and password from html element and comparing it.
   if(this.loginForm.get('userName')?.value=="shubham" && 
   this.loginForm.get('password')?.value=="ssa@123"){
-    this.userNameSending(this.loginForm.get('userName')?.value);
+    //this.userNameSending(this.loginForm.get('userName')?.value);
+    //below I'am setting value inside the shared-data.service.ts 
+    this.shared.setUserName(this.loginForm.get('userName')?.value);
+    //now I'am navigating to the home page.
+    this.router.navigate(['home']);
   }
 }
 

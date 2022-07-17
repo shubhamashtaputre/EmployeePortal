@@ -15,7 +15,7 @@ const routes: Routes = [
   */
   {path:"",component:LoginComponent},
   //here I'am including name string along home url string
-  {path:"home/:name",component:HomeComponent},
+  //{path:"home/:name",component:HomeComponent},
   {path:"home",component:HomeComponent},
   {path:"view",component:ViewComponent},
   {path:"update",component:UpdateComponent},
