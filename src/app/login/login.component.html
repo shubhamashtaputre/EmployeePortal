@@ -1,0 +1,16 @@
+
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<link href="./login.component.css" rel="stylesheet">
+</head>
+<body>
+<form [formGroup]="loginForm" (ngSubmit)="homePage()">
+<label for="" id="lblUserName" style="position:absolute;left:173px;top:146px;width:117px;height:20px;line-height:20px;z-index:0;">UserName:</label>
+<label for="" id="lblPassword" style="position:absolute;left:173px;top:201px;width:117px;height:20px;line-height:20px;z-index:1;">Password:</label>
+<input type="text" id="txtUsername" formControlName="userName" style="position:absolute;left:357px;top:148px;width:246px;height:16px;z-index:2;" name="Editbox1" value="" spellcheck="false">
+<input type="text" id="txtPassword" formControlName="password" style="position:absolute;left:357px;top:201px;width:246px;height:16px;z-index:3;" name="Editbox1" value="" spellcheck="false">
+<input type="submit" id="btnSubmit" name="" value="Submit" style="position:absolute;left:178px;top:252px;width:120px;height:31px;z-index:4;">
+<label for="" id="lblFormTitle" style="position:absolute;left:176px;top:87px;width:429px;height:20px;line-height:20px;z-index:5;">Employee Login</label>
+</form>
+</body>
