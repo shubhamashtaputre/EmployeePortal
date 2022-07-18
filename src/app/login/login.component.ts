@@ -32,15 +32,23 @@ export class LoginComponent implements OnInit {
 //when the user clicks on submit button inside the login page then
 //this login page will be moved to home page.
  homePage(){
-  //when this function is invoked on submit button click the 
-  //first I'am fetching username and password from html element and comparing it.
+  /*
+  here 'this.loginForm.get('userName')?.value' the value that I'am fetching using html form to 
+  component is known as one-way data binding.
+  */
+  /*
+  when this function is invoked on submit button click the 
+  first I'am fetching username and password from html element and comparing it.
+  */
   if(this.loginForm.get('userName')?.value=="shubham" && 
   this.loginForm.get('password')?.value=="ssa@123"){
-    //this.userNameSending(this.loginForm.get('userName')?.value);
-    //below I'am setting value inside the shared-data.service.ts 
-    this.shared.setUserName(this.loginForm.get('userName')?.value);
-    //now I'am navigating to the home page.
-    this.router.navigate(['home']);
+  /*
+  this.userNameSending(this.loginForm.get('userName')?.value);
+  below I'am setting value inside the shared-data.service.ts
+  */
+  this.shared.setUserName(this.loginForm.get('userName')?.value);
+  //now I'am navigating to the home page.
+  this.router.navigate(['home']);
   }
 }
 
