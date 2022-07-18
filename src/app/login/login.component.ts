@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
 
 //when the user clicks on submit button inside the login page then
 //this login page will be moved to home page.
- homePage(){
+ homePage():boolean{
   /*
   here 'this.loginForm.get('userName')?.value' the value that I'am fetching using html form to 
   component is known as one-way data binding.
@@ -50,6 +50,14 @@ export class LoginComponent implements OnInit {
   //now I'am navigating to the home page.
   this.router.navigate(['home']);
   }
+  /*if(this.loginForm.get('userName')?.value!="shubham"){
+    return false;
+  }
+  if(this.loginForm.get('password')?.value==null){
+    return false;
+  }*/
+  return true;
+
 }
 
 }

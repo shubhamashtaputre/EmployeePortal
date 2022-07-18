@@ -6,6 +6,7 @@
 <body>
 <form [formGroup]="loginForm" (ngSubmit)="homePage()">
 <label for="" id="lblUserName">UserName:</label>
+<!--<label *ngIf="homePage()!=true">UserfName:</label>-->
 <label for="" id="lblPassword">Password:</label>
 <input type="text" id="txtUsername" formControlName="userName" name="Editbox1" value="" spellcheck="false">
 <input type="text" id="txtPassword" formControlName="password" name="Editbox1" value="" spellcheck="false">
