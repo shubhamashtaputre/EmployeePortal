@@ -1,7 +1,12 @@
 <link href="view.component.css" rel="stylesheet">
-<label for="" id="lblUserName" style="position:absolute;left:159px;top:120px;width:133px;height:20px;line-height:20px;z-index:0;">Enter UserName:</label>
-<label for="" id="lblFormTitle" style="position:absolute;left:162px;top:61px;width:429px;height:20px;line-height:20px;z-index:1;">View Profile</label>
-<input type="text" id="txtUsername" style="position:absolute;left:343px;top:122px;width:246px;height:16px;z-index:2;" name="Editbox1" value={{viewUserName}} spellcheck="false">
+<label for="" id="lblUserName">UserName:</label>
+<label for="" id="lblFormTitle">View Profile</label>
+
+<!--<input type="text" id="txtUsername" style="position:absolute;left:343px;top:122px;width:246px;
+height:16px;z-index:2;" name="Editbox1" value={{viewUserName}} spellcheck="false">-->
+
+<label for="" id="lblUserLoadedName">{{viewUserName}}</label>
+
 <a routerLink="/home">
-<input type="button" id="btnHome" name="homeButton" value="Back" style="position:absolute;left:159px;top:164px;width:136px;height:28px;z-index:3;">
+<input type="button" id="btnHome" name="homeButton" value="Back">
 </a>

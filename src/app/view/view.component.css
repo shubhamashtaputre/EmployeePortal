@@ -46,6 +46,24 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: center;
    vertical-align: top;
+   position:absolute;left:159px;top:120px;width:133px;height:20px;line-height:20px;z-index:0;
+}
+#lblUserLoadedName
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: center;
+   vertical-align: top;
+   position:absolute;left:300px;top:120px;width:133px;height:20px;line-height:20px;z-index:0;
 }
 #lblFormTitle
 {
@@ -62,6 +80,7 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: center;
    vertical-align: top;
+   position:absolute;left:162px;top:61px;width:429px;height:20px;line-height:20px;z-index:1;
 }
 #txtUsername
 {
@@ -100,6 +119,7 @@ input:focus, textarea:focus, select:focus
    text-align: center;
    -webkit-appearance: none;
    margin: 0;
+   position:absolute;left:159px;top:164px;width:136px;height:28px;z-index:3;
 }
 h1, .h1
 {
