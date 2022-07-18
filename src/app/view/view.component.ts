@@ -18,4 +18,19 @@ export class ViewComponent implements OnInit {
     this.viewUserName = this.shared.getUserName();
   }
 
+  //running a for loop inside html page using '*ngFor' directive.
+  personDetails: any[] = [
+    {
+    'project':'test project',
+    'id':'test id'
+    },
+    {
+    'project':'test project - 2',
+    'id':'test id - 2'
+    }
+
+];
+
+
+
 }

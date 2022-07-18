@@ -1,12 +1,20 @@
 <link href="view.component.css" rel="stylesheet">
 <label for="" id="lblUserName">UserName:</label>
 <label for="" id="lblFormTitle">View Profile</label>
-
 <!--<input type="text" id="txtUsername" style="position:absolute;left:343px;top:122px;width:246px;
 height:16px;z-index:2;" name="Editbox1" value={{viewUserName}} spellcheck="false">-->
-
 <label for="" id="lblUserLoadedName">{{viewUserName}}</label>
-
 <a routerLink="/home">
 <input type="button" id="btnHome" name="homeButton" value="Back">
 </a>
+
+<!-- If you want to run the for loop inside the html page then use the '*ngFor' directive
+where the for loop fetch the value from the component page which is binded to this html page -->
+<!--
+<ul>    
+    <li *ngFor='let employee of personDetails; let i = index;'>    
+      {{i+1}} 
+      {{employee.project}} 
+      {{employee.id}}
+</ul>     
+-->
